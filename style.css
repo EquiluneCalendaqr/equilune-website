@@ -167,3 +167,95 @@ img {
     padding: 28px 16px;
   }
 }
+
+/* =========================
+   EQUILUNE ARTICLE PAGES
+   ========================= */
+
+.equilune-article {
+  max-width: 760px;
+  margin: 0 auto;
+  color: #172646;
+}
+
+.equilune-article h1 {
+  font-family: Georgia, serif;
+  font-size: 36px;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.equilune-article .page-subtitle {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 100px;
+  color: #68748a;
+}
+
+.article-body {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.article-body p {
+  margin: 0 0 22px;
+}
+
+.article-body h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  margin: 55px 0 25px;
+}
+
+.article-body h3 {
+  font-family: Georgia, serif;
+  font-size: 22px;
+  margin: 45px 0 20px;
+}
+
+.article-body ul {
+  padding-left: 25px;
+  margin-bottom: 25px;
+}
+
+.article-body li {
+  margin-bottom: 10px;
+}
+
+.article-body a {
+  color: #365a8c;
+  text-decoration: underline;
+}
+
+.article-body hr {
+  border: none;
+  border-top: 1px solid #d9dfe8;
+  margin: 75px 0;
+}
+
+@media (max-width: 768px) {
+  .equilune-article h1 {
+    font-size: 30px;
+  }
+
+  .equilune-article .page-subtitle {
+    font-size: 19px;
+    margin-bottom: 75px;
+  }
+
+  .article-body {
+    font-size: 15px;
+    line-height: 1.85;
+  }
+
+  .article-body h2 {
+    font-size: 25px;
+  }
+
+  .article-body h3 {
+    font-size: 21px;
+  }
+}
