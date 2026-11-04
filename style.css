@@ -9,3 +9,161 @@ img {
   max-width: 900px;
   height: auto;
 }
+/* =========================
+   EQUILUNE SITE NAVIGATION
+   ========================= */
+
+/* 全体のレイアウト */
+.site-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* PC用サイドバー */
+.sidebar {
+  width: 290px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 32px 22px;
+  border-right: 1px solid #e2e6ed;
+  background: #ffffff;
+  text-align: left;
+}
+
+/* サイトロゴ */
+.site-logo {
+  display: block;
+  color: #172646;
+  font-family: Georgia, serif;
+  font-size: 25px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-bottom: 36px;
+}
+
+/* メニュー全体 */
+.site-nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 各メニュー項目 */
+.site-nav a {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid #e9ecf1;
+  text-decoration: none;
+  color: #172646;
+}
+
+/* 大きなメニュー名 */
+.nav-title {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+/* 小さなサブタイトル */
+.nav-subtitle {
+  display: block;
+  margin-top: 4px;
+  font-size: 11px;
+  line-height: 1.5;
+  color: #68748a;
+}
+
+/* マウスを乗せたとき */
+.site-nav a:hover {
+  color: #637da5;
+}
+
+/* 本文 */
+.main-content {
+  flex: 1;
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 40px 24px;
+  text-align: center;
+}
+
+/* PCではスマホ用ヘッダーを隠す */
+.mobile-header {
+  display: none;
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+  .site-layout {
+    display: block;
+  }
+
+  /* PC用サイドバーを隠す */
+  .sidebar {
+    display: none;
+  }
+
+  /* スマホ用ヘッダー */
+  .mobile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 18px 22px;
+    border-bottom: 1px solid #e2e6ed;
+    position: relative;
+    background: white;
+    text-align: left;
+  }
+
+  .mobile-header .site-logo {
+    margin: 0;
+    font-size: 21px;
+  }
+
+  /* ハンバーガーメニュー */
+  .mobile-menu summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 28px;
+    color: #172646;
+  }
+
+  .mobile-menu summary::-webkit-details-marker {
+    display: none;
+  }
+
+  /* 開いたメニュー */
+  .mobile-menu nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: white;
+    padding: 12px 25px 30px;
+    border-bottom: 1px solid #e2e6ed;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    max-height: 75vh;
+    overflow-y: auto;
+  }
+
+  .mobile-menu .nav-title {
+    font-size: 19px;
+  }
+
+  .mobile-menu .nav-subtitle {
+    font-size: 12px;
+  }
+
+  /* 本文 */
+  .main-content {
+    padding: 28px 16px;
+  }
+}
