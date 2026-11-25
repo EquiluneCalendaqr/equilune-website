@@ -1,0 +1,26 @@
+/* Scoped to the conversation page */
+.conversation {font-family: Georgia, serif; text-align:left; font-size:16px; line-height:1.85;}
+.conversation .page-subtitle {margin-bottom:48px;}
+.conversation-intro {text-align:center;}
+.conversation-intro p {margin:0 0 20px;}
+.conversation-intro a {color:#365a8c;}
+.conversation hr {border:0;border-top:1px solid #d9dfe8;margin:36px 0;}
+.conversation-heading {display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;}
+.conversation-heading h2,.conversation-heading span,.comment-meta,.counter,.preview-note {font-family:Arial,sans-serif;font-size:12px;color:#68748a;}
+.conversation-heading h2 {letter-spacing:.1em;margin:0;font-weight:600;}
+.preview-note {line-height:1.5;}
+.speech {position:relative;box-sizing:border-box;background:white;border:1px solid #d5dce5;border-radius:18px;padding:18px 20px;margin:0 5px 34px;box-shadow:2px 4px 9px rgba(23,38,70,.07);}
+.speech::after {content:"";position:absolute;bottom:-9px;left:25px;width:16px;height:16px;background:white;border-right:1px solid #d5dce5;border-bottom:1px solid #d5dce5;transform:skewY(-25deg) rotate(45deg);box-shadow:3px 3px 4px rgba(23,38,70,.04);}
+.comment-meta {display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;}
+.comment-number {font-weight:bold;}
+.comment-body {white-space:pre-wrap;overflow-wrap:anywhere;margin:12px 0;}
+.compose::after {left:auto;right:25px;transform:skewY(25deg) rotate(45deg);}
+.compose textarea {display:block;width:100%;box-sizing:border-box;resize:vertical;border:0;background:white;color:#172646;font:inherit;min-height:120px;}
+.compose textarea:focus-visible {outline:1px solid #68748a;outline-offset:4px;}
+.counter {text-align:right;}
+.post-row {display:flex;justify-content:flex-end;}
+.post-row button {background:#172646;color:white;border:0;border-radius:5px;padding:12px 20px;font:inherit;}
+.post-row button:disabled {opacity:.55;cursor:not-allowed;}
+.conversation-motto {text-align:center;color:#68748a;font-size:13px;margin-top:32px;}
+.sr-only {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);}
+@media(max-width:768px){.conversation{font-size:15px;}.conversation .page-subtitle{margin-bottom:38px;}.speech{padding:14px 16px;}}
